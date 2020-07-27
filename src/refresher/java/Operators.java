@@ -67,6 +67,22 @@ public class Operators {
             System.out.println("wasCar is true");
         }
 
+        double challVal = 20.00d;
+        double challValTwo = 80.00d;
+
+        double sumTimes = (challVal + challValTwo) * 100.00d;
+        System.out.println(sumTimes);
+        double remainder = sumTimes % 40.00d;
+        System.out.println(remainder);
+        boolean remainVal = remainder == 0 ? true : false;
+        System.out.println(remainVal);
+
+        if (remainVal){
+            System.out.println("no remainder");
+        } else {
+            System.out.println("Remainder left");
+        }
+
 
 
     }
