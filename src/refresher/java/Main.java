@@ -11,8 +11,7 @@ public class Main {
 //        System.out.println("Porsche model: " + porsche.getModel());
 //        System.out.println("Holden model: " + holden.getModel());
 
-        BankAccount myAcct = new BankAccount();
-        myAcct.setBalance(500.00);
+        BankAccount myAcct = new BankAccount(123456789, 500.00, "Kells Neagley", "kells@email.com", 2102102102);
         System.out.println(myAcct.getBalance());
         myAcct.depositFunds(75.75);
         System.out.println(myAcct.getBalance());

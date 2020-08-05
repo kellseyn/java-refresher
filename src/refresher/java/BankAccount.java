@@ -7,6 +7,18 @@ public class BankAccount {
     private String email;
     private long phoneNumber;
 
+    public BankAccount(){
+        System.out.println("Empty");
+    }
+
+    public BankAccount(long accountNumber, double balance, String name, String email, long phoneNumber){
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+        this.name = name;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+    }
+
     public long getAccountNumber(){
         return this.accountNumber;
     }
@@ -56,5 +68,6 @@ public class BankAccount {
             System.out.println("Final Balance: " + this.balance);
         }
     }
+
 
 }
