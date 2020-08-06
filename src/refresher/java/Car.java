@@ -1,23 +1,31 @@
 package refresher.java;
 
-public class Car {
+public class Car extends Vehicle{
 
 
     private int doors;
     private int wheels;
-    private String model;
-    private String engine;
-    private String color;
+    private int gears;
+    private boolean isManual;
 
-    public void setModel(String model) {
-        String validModel = model.toLowerCase();
-        if (validModel.equals("carrera") || validModel.equals("commodore")) {
-            this.model = model;
-        } else {
-            this.model = "Unknown";
-        }
+    private int currentGear;
+
+    public Car(String name, String size, int doors, int wheels, int gears, boolean isManual) {
+        super(name, size);
+        this.doors = doors;
+        this.wheels = wheels;
+        this.gears = gears;
+        this.isManual = isManual;
+        this.currentGear = 1;
     }
-    public String getModel(){
-        return this.model;
+
+    public void changeGear (int currentGear){
+        this.currentGear = currentGear;
     }
+
+    public void changeVelocity(int speed, int direction){
+        move(speed, direction);
+    }
+
+
 }
