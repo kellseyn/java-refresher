@@ -10,6 +10,7 @@ public class DescendingArray {
         int[] intArray = getIntegers(5);
         int[] sorted = sortIntegers(intArray);
         printArray(sorted);
+
     }
 
     public static int[] getIntegers(int capacity){
