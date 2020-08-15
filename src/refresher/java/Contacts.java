@@ -18,6 +18,7 @@ public class Contacts {
     }
 
     public static Contacts createContact(String name, String phoneNumber){
+        System.out.println(new Contacts(name, phoneNumber));
         return new Contacts(name, phoneNumber);
     }
 }
