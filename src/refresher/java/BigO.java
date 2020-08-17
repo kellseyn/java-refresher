@@ -1,7 +1,9 @@
 package refresher.java;
 
 import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
 
 public class BigO {
     //log uses binary search to halve the search
@@ -18,7 +20,27 @@ public class BigO {
 //        System.out.println(nums.length);
 //        System.out.println(Arrays.toString(nums));
 
+        //array list practice
+//        ArrayList<Integer> list = new ArrayList<>();
+//        list.add(10);
+//        list.add(20);
+//        list.add(30);
+//        list.add(50);
+//        list.remove(2);
+//        list.indexOf(50);
+//        System.out.println(list);
 
+        LinkedList list = new LinkedList();
+        list.addLast(10);
+        list.addLast(20);
+        list.addLast(30);
+        list.addFirst(5);
+        list.removeLast();
+        System.out.println(list.contains(20));
+        System.out.println(list.indexOf(10));
+        System.out.println(list.size());
+        var array = list.toArray();
+        System.out.println(Arrays.toString(array));
 
     }
     public void log(int[] numbers, String[] names){
