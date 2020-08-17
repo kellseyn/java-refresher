@@ -1,5 +1,6 @@
 package refresher.java;
 
+
 public class Main {
 
     public static void main(String[] args) {
@@ -21,8 +22,17 @@ public class Main {
 //        myAcct.withdrawFunds(400.00);
 //        System.out.println(myAcct.getBalance());
 
-        //Inheritance lesson
-
+        //Building dynamic array lesson
+        Array numbs = new Array(3);
+        numbs.print();
+        numbs.insert(10);
+        numbs.insert(20);
+        numbs.insert(30);
+        numbs.insert(40);
+        numbs.print();
+        numbs.removeAt(3);
+        numbs.print();
+        System.out.println(numbs.indexOf(10));
 
 
     }
