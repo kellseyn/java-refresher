@@ -23,16 +23,28 @@ public class Main {
 //        System.out.println(myAcct.getBalance());
 
         //Building dynamic array lesson
-        Array numbs = new Array(3);
-        numbs.print();
-        numbs.insert(10);
-        numbs.insert(20);
-        numbs.insert(30);
-        numbs.insert(40);
-        numbs.print();
-        numbs.removeAt(3);
-        numbs.print();
-        System.out.println(numbs.indexOf(10));
+//        Array numbs = new Array(3);
+//        numbs.print();
+//        numbs.insert(10);
+//        numbs.insert(20);
+//        numbs.insert(30);
+//        numbs.insert(40);
+//        numbs.print();
+//        numbs.removeAt(3);
+//        numbs.print();
+//        System.out.println(numbs.indexOf(10));
+
+        //linkedlist lesson
+//        java.util.LinkedList<String> x = new java.util.LinkedList<>();
+//        x.removeFirst();
+        var list = new LinkedList();
+        list.addLast(10);
+        list.addLast(20);
+        list.addLast(30);
+        System.out.println(list.indexOf(10));
+        System.out.println(list.contains(40));
+        list.removeFirst();
+        list.removeLast();
 
 
     }

@@ -43,7 +43,7 @@ public class BigO {
         System.out.println(Arrays.toString(array));
 
     }
-    public void log(int[] numbers, String[] names){
+//    public void log(int[] numbers, String[] names){
         //O(1)
 //        System.out.println(numbers[0]);
 //        System.out.println(numbers[0]);
@@ -69,10 +69,5 @@ public class BigO {
 //                }
 //            }
 //        }
-
-
-
-
-
-    }
+//    }
 }
